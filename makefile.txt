@@ -1,0 +1,8 @@
+ABC.exe:f1.o main.o
+	gcc -o ABC.exe f1.o main.o
+f1.o:f1.c
+	gcc -c f1.c
+main.o:main.c
+	gcc -c main.c
+clean:
+	rm -rf *.c *.exe
